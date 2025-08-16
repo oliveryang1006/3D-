@@ -27,3 +27,5 @@ python webapp.py
 
 随后在浏览器访问 `http://localhost:5000/`，即可通过网页进行入库、出库并查看低库存商品。
 若需要脚本访问，也可以向 `/add`、`/remove` 和 `/low-stock` 发送 JSON 请求。
+`/add` 接口需要提供以下字段：
+`name`、`spec`、`qty`、`production_date`、`expiry_date`、`supplier`、`purchase_date`、`invoice_number`。

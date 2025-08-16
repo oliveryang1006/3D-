@@ -7,9 +7,16 @@ from typing import Dict, List
 
 @dataclass
 class Item:
-    """表示一种商品。"""
+    """表示一种商品及其入库信息。"""
+
     name: str
+    spec: str
     quantity: int = 0
+    production_date: str = ""
+    expiry_date: str = ""
+    supplier: str = ""
+    purchase_date: str = ""
+    invoice_number: str = ""
 
 class InventoryManager:
     """简单的内存库存管理。"""
@@ -18,16 +25,41 @@ class InventoryManager:
         self.items: Dict[str, Item] = {}
         self.low_stock_threshold = low_stock_threshold
 
-    def add_item(self, name: str, qty: int = 1) -> str:
-        """入库商品。
+    def add_item(
+        self,
+        name: str,
+        spec: str,
+        qty: int,
+        production_date: str,
+        expiry_date: str,
+        supplier: str,
+        purchase_date: str,
+        invoice_number: str,
+    ) -> str:
+        """入库商品，并记录必要信息。
 
         返回适合视觉展示的提示文本。
         """
         item = self.items.get(name)
         if item:
             item.quantity += qty
+            item.spec = spec
+            item.production_date = production_date
+            item.expiry_date = expiry_date
+            item.supplier = supplier
+            item.purchase_date = purchase_date
+            item.invoice_number = invoice_number
         else:
-            self.items[name] = Item(name=name, quantity=qty)
+            self.items[name] = Item(
+                name=name,
+                spec=spec,
+                quantity=qty,
+                production_date=production_date,
+                expiry_date=expiry_date,
+                supplier=supplier,
+                purchase_date=purchase_date,
+                invoice_number=invoice_number,
+            )
         return f"[成功] 已入库 {name} x{qty}"
 
     def remove_item(self, name: str, qty: int = 1) -> str:

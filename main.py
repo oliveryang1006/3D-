@@ -18,8 +18,25 @@ def main() -> None:
         choice = input(menu + "> ")
         if choice == "1":
             name = input("商品名称: ")
+            spec = input("规格型号: ")
             qty = int(input("数量: "))
-            print(manager.add_item(name, qty))
+            production_date = input("生产日期: ")
+            expiry_date = input("保质期: ")
+            supplier = input("供应商信息: ")
+            purchase_date = input("进货日期: ")
+            invoice = input("进货票据编号: ")
+            print(
+                manager.add_item(
+                    name,
+                    spec,
+                    qty,
+                    production_date,
+                    expiry_date,
+                    supplier,
+                    purchase_date,
+                    invoice,
+                )
+            )
         elif choice == "2":
             name = input("商品名称: ")
             qty = int(input("数量: "))

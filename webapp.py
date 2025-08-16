@@ -22,8 +22,23 @@ def add_item():
     """入库商品。"""
     data = request.get_json(silent=True) or request.form
     name = data.get("name")
+    spec = data.get("spec")
     qty = int(data.get("qty", 1))
-    message = manager.add_item(name, qty)
+    production_date = data.get("production_date")
+    expiry_date = data.get("expiry_date")
+    supplier = data.get("supplier")
+    purchase_date = data.get("purchase_date")
+    invoice_number = data.get("invoice_number")
+    message = manager.add_item(
+        name,
+        spec,
+        qty,
+        production_date,
+        expiry_date,
+        supplier,
+        purchase_date,
+        invoice_number,
+    )
     if request.is_json:
         return jsonify({"message": message, "quantity": manager.get_quantity(name)})
     return redirect(url_for("index", msg=message))

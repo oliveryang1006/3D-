@@ -8,7 +8,7 @@
 
 - 提供了基础的库存管理模块 `InventoryManager`
 - 提供命令行演示界面 `main.py`
-- 新增基于 Flask 的简单网页接口 `webapp.py`
+- 新增基于 Flask 的网页界面和 JSON API `webapp.py`
 
 ## 运行
 
@@ -25,4 +25,5 @@ pip install flask
 python webapp.py
 ```
 
-随后在浏览器或使用 `curl` 等工具访问 `http://localhost:5000`。
+随后在浏览器访问 `http://localhost:5000/`，即可通过网页进行入库、出库并查看低库存商品。
+若需要脚本访问，也可以向 `/add`、`/remove` 和 `/low-stock` 发送 JSON 请求。

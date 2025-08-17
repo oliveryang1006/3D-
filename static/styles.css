@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.alert {
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.alert.success {
+  color: #155724;
+  background: #d4edda;
+}
+
+.alert.error {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+.warning {
+  color: #856404;
+}

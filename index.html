@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芦苇到家 · 上门养老服务平台</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">芦</span>
+                <span class="logo-text">芦苇到家</span>
+            </div>
+            <nav class="nav-links" aria-label="主导航">
+                <a href="#features">平台亮点</a>
+                <a href="#roles">角色协同</a>
+                <a href="#workflow">服务流程</a>
+                <a href="#orders">订单大厅</a>
+                <a href="#contact">联系我们</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn ghost" data-form="login-admin">管理员入口</button>
+                <button class="btn primary" data-form="signup-volunteer">立即加入</button>
+                <button class="menu-toggle" aria-label="切换导航">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav" aria-label="移动导航">
+            <a href="#features">平台亮点</a>
+            <a href="#roles">角色协同</a>
+            <a href="#workflow">服务流程</a>
+            <a href="#orders">订单大厅</a>
+            <a href="#contact">联系我们</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <span class="badge">智慧养老 · 以人为本</span>
+                <h1>芦苇到家 —— 让每一次上门服务更温暖、更可信赖</h1>
+                <p>集供应商、义工、志愿者与管理员于一体的全流程数字化平台，打造高效、透明的上门养老服务生态，让爱与陪伴触手可及。</p>
+                <div class="hero-actions">
+                    <button class="btn primary" data-form="signup-supplier">机构入驻申请</button>
+                    <button class="btn ghost" data-form="signup-volunteer">志愿者注册</button>
+                </div>
+                <div class="stats">
+                    <div>
+                        <h3>120+</h3>
+                        <p>认证养老服务机构</p>
+                    </div>
+                    <div>
+                        <h3>5,800+</h3>
+                        <p>义工志愿者</p>
+                    </div>
+                    <div>
+                        <h3>98%</h3>
+                        <p>服务满意度</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-illustration" aria-hidden="true">
+                <div class="card card--elder">
+                    <h3>今日安排</h3>
+                    <p>张奶奶 · 居家护理</p>
+                    <span>16:00 · 义工 王敏</span>
+                </div>
+                <div class="card card--volunteer">
+                    <h3>志愿者待办</h3>
+                    <ul>
+                        <li>上门陪诊</li>
+                        <li>日常陪伴</li>
+                        <li>健康随访</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="features" id="features">
+            <div class="container">
+                <h2>平台亮点</h2>
+                <p class="section-intro">一站式智慧养老平台，覆盖服务匹配、质量监管、数据沉淀，为每位长者打造安全、舒心的居家服务体验。</p>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>智能排班调度</h3>
+                        <p>AI 赋能排班，智能匹配服务人员与订单需求，减少等待时间，提高服务效率。</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>多角色协同</h3>
+                        <p>供应商、义工、志愿者、管理员四方协作，订单流转清晰，过程可追踪。</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>全程质量监管</h3>
+                        <p>服务标准化评估、实时签到定位、服务反馈打分，确保服务可控可查。</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>适配多终端</h3>
+                        <p>同时适配 PC 与移动端，随时随地掌握订单进展与服务动态。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="roles" id="roles">
+            <div class="container">
+                <h2>四类角色，全流程协同</h2>
+                <div class="role-tabs" role="tablist" aria-label="角色切换">
+                    <button class="role-tab active" role="tab" aria-selected="true" data-role="supplier">供应商（服务机构）</button>
+                    <button class="role-tab" role="tab" aria-selected="false" data-role="volunteer">义工</button>
+                    <button class="role-tab" role="tab" aria-selected="false" data-role="freelancer">志愿者</button>
+                    <button class="role-tab" role="tab" aria-selected="false" data-role="admin">管理员</button>
+                </div>
+                <div class="role-panels">
+                    <article class="role-panel active" data-role="supplier" role="tabpanel">
+                        <h3>供应商 · 机构入驻与管理</h3>
+                        <ul>
+                            <li>提交资质，完成平台审核后上线。</li>
+                            <li>创建服务项目、套餐与价格，管理自有义工团队。</li>
+                            <li>接收订单推送，调度内部义工或指派注册志愿者。</li>
+                            <li>实时掌握服务进度、费用结算和评价数据。</li>
+                        </ul>
+                        <button class="btn primary" data-form="signup-supplier">我要入驻</button>
+                    </article>
+                    <article class="role-panel" data-role="volunteer" role="tabpanel">
+                        <h3>义工 · 机构团队成员</h3>
+                        <ul>
+                            <li>由供应商创建账户，认证后即可在平台接单。</li>
+                            <li>随时查看待办订单、签到完成任务、上传服务报告。</li>
+                            <li>支持手机端一键导航、服务提醒与安全报警。</li>
+                        </ul>
+                        <button class="btn ghost" data-form="login-volunteer">登录接单</button>
+                    </article>
+                    <article class="role-panel" data-role="freelancer" role="tabpanel">
+                        <h3>志愿者 · 独立注册参与</h3>
+                        <ul>
+                            <li>在线自助注册，通过实名认证后加入平台。</li>
+                            <li>订单由合作供应商指派，确保服务质量与流程监管。</li>
+                            <li>参与积分激励、培训认证、公益活动。</li>
+                        </ul>
+                        <button class="btn primary" data-form="signup-volunteer">志愿者注册</button>
+                    </article>
+                    <article class="role-panel" data-role="admin" role="tabpanel">
+                        <h3>管理员 · 平台运营枢纽</h3>
+                        <ul>
+                            <li>审核机构资质、志愿者身份与服务记录。</li>
+                            <li>监控订单流转数据，管理投诉与应急调度。</li>
+                            <li>沉淀平台指标，输出服务质量与运营报告。</li>
+                        </ul>
+                        <button class="btn ghost" data-form="login-admin">管理员登录</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="workflow" id="workflow">
+            <div class="container">
+                <h2>标准化服务流程</h2>
+                <div class="workflow-grid">
+                    <div class="workflow-step">
+                        <span class="step-index">1</span>
+                        <h3>需求收集</h3>
+                        <p>老人或家属在平台提交上门服务需求，选择供应商或平台智能匹配。</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="step-index">2</span>
+                        <h3>机构审核</h3>
+                        <p>供应商确认服务内容并指派义工或志愿者，管理员可协助调度。</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="step-index">3</span>
+                        <h3>上门服务</h3>
+                        <p>服务人员签到、导航、完成任务并上传服务记录，全程可视可控。</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span class="step-index">4</span>
+                        <h3>反馈与结算</h3>
+                        <p>长者及家属评价服务质量，系统自动生成结算单与回访计划。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="orders" id="orders">
+            <div class="container">
+                <div class="section-header">
+                    <h2>实时订单大厅</h2>
+                    <div class="order-filters">
+                        <label>
+                            <span>服务区域</span>
+                            <select id="filter-area">
+                                <option value="all">全部</option>
+                                <option value="朝阳区">朝阳区</option>
+                                <option value="浦东新区">浦东新区</option>
+                                <option value="高新区">高新区</option>
+                            </select>
+                        </label>
+                        <label>
+                            <span>服务类型</span>
+                            <select id="filter-type">
+                                <option value="all">全部</option>
+                                <option value="陪诊">陪诊</option>
+                                <option value="康复护理">康复护理</option>
+                                <option value="家政">家政</option>
+                            </select>
+                        </label>
+                        <label class="toggle">
+                            <input type="checkbox" id="toggle-personal">
+                            <span>显示志愿者可接订单</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="order-list" role="list"></div>
+            </div>
+        </section>
+
+        <section class="data-insight">
+            <div class="container">
+                <div class="insight-card">
+                    <h2>数据看板</h2>
+                    <div class="insight-grid">
+                        <div>
+                            <h3>订单增长趋势</h3>
+                            <p>近 30 日上门服务订单增长 36%，高峰集中在周二、周五。</p>
+                        </div>
+                        <div>
+                            <h3>服务覆盖</h3>
+                            <p>覆盖 18 个城市、76 个社区，平均响应时间控制在 2 小时内。</p>
+                        </div>
+                        <div>
+                            <h3>安全守护</h3>
+                            <p>智能安防预警 52 起，全部在 5 分钟内响应处理。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="insight-card">
+                    <h2>培训与公益活动</h2>
+                    <ul class="activity-list">
+                        <li>
+                            <span>6 月 · 居家康复护理进阶培训</span>
+                            <span class="tag">义工专属</span>
+                        </li>
+                        <li>
+                            <span>7 月 · “邻里守护”社区巡访行动</span>
+                            <span class="tag">志愿者招募</span>
+                        </li>
+                        <li>
+                            <span>8 月 · 供应商服务能力评估计划</span>
+                            <span class="tag">机构升级</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>加入芦苇到家，一起守护长者的安心生活</h2>
+                <div class="cta-actions">
+                    <button class="btn primary" data-form="signup-supplier">机构入驻</button>
+                    <button class="btn ghost" data-form="signup-volunteer">志愿者注册</button>
+                    <button class="btn ghost" data-form="login-volunteer">义工登录</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2>常见问题</h2>
+                <div class="faq-grid">
+                    <details open>
+                        <summary>供应商入驻需要哪些资料？</summary>
+                        <p>需要提供营业执照、服务资质证明、团队成员信息与服务保障方案，提交后 3 个工作日内反馈审核结果。</p>
+                    </details>
+                    <details>
+                        <summary>义工如何接单？</summary>
+                        <p>义工由所在供应商创建账户，可在移动端随时查看待办订单，确认后即可接单并开启服务流程。</p>
+                    </details>
+                    <details>
+                        <summary>志愿者如何参与？</summary>
+                        <p>志愿者自行注册后通过实名认证，等待供应商指派服务订单，并可参与平台组织的公益活动。</p>
+                    </details>
+                    <details>
+                        <summary>平台如何保障服务安全？</summary>
+                        <p>平台提供签到定位、服务录音、紧急报警、保险保障等功能，全程可追溯，管理员实时监控。</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">芦</span>
+                    <span class="logo-text">芦苇到家</span>
+                </div>
+                <p>让爱与专业同行，为长者打造更有温度的上门养老服务。</p>
+            </div>
+            <div class="footer-grid">
+                <div>
+                    <h3>联系我们</h3>
+                    <ul>
+                        <li>服务热线：400-800-2024</li>
+                        <li>邮箱：care@luweidaojia.com</li>
+                        <li>总部地址：上海市浦东新区花木路 666 号</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>快速入口</h3>
+                    <ul>
+                        <li><a href="#roles">角色介绍</a></li>
+                        <li><a href="#workflow">服务流程</a></li>
+                        <li><a href="#orders">订单大厅</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>关注我们</h3>
+                    <p>扫描二维码关注“芦苇到家”微信公众号，获取更多养老服务资讯。</p>
+                    <div class="qr-placeholder">二维码</div>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copy">© 2024 芦苇到家养老科技有限公司 · All rights reserved.</p>
+    </footer>
+
+    <div class="overlay" hidden></div>
+    <dialog class="form-dialog" aria-modal="true">
+        <button class="dialog-close" aria-label="关闭">×</button>
+        <div class="dialog-content"></div>
+    </dialog>
+
+    <template id="form-templates">
+        <section data-form="signup-supplier">
+            <h2>供应商入驻申请</h2>
+            <p>欢迎加入芦苇到家，请填写机构信息，平台将在 3 个工作日内完成审核。</p>
+            <form class="form-grid">
+                <label>
+                    机构名称
+                    <input type="text" placeholder="请输入机构名称" required>
+                </label>
+                <label>
+                    联系人
+                    <input type="text" placeholder="请输入联系人姓名" required>
+                </label>
+                <label>
+                    联系电话
+                    <input type="tel" placeholder="例如 138 0000 0000" required>
+                </label>
+                <label>
+                    服务城市
+                    <input type="text" placeholder="例如 上海" required>
+                </label>
+                <label class="full">
+                    服务类型
+                    <select required>
+                        <option value="">请选择</option>
+                        <option value="居家护理">居家护理</option>
+                        <option value="康复陪护">康复陪护</option>
+                        <option value="助餐助浴">助餐助浴</option>
+                        <option value="日间照料">日间照料</option>
+                    </select>
+                </label>
+                <label class="full">
+                    机构介绍
+                    <textarea rows="4" placeholder="简要介绍机构资质、服务团队、特色项目等"></textarea>
+                </label>
+                <button class="btn primary" type="submit">提交入驻申请</button>
+            </form>
+        </section>
+        <section data-form="login-volunteer">
+            <h2>义工登录</h2>
+            <p>请使用供应商为您提供的账号信息登录，查看并接取订单。</p>
+            <form class="form-grid">
+                <label>
+                    账号
+                    <input type="text" placeholder="请输入账号" required>
+                </label>
+                <label>
+                    密码
+                    <input type="password" placeholder="请输入密码" required>
+                </label>
+                <button class="btn primary" type="submit">登录</button>
+                <a href="#" class="link">忘记密码？联系所属机构管理员</a>
+            </form>
+        </section>
+        <section data-form="signup-volunteer">
+            <h2>志愿者注册</h2>
+            <p>欢迎加入芦苇到家志愿者团队，完成注册后等待供应商指派订单。</p>
+            <form class="form-grid">
+                <label>
+                    姓名
+                    <input type="text" placeholder="请输入姓名" required>
+                </label>
+                <label>
+                    联系电话
+                    <input type="tel" placeholder="例如 137 0000 0000" required>
+                </label>
+                <label>
+                    所在城市
+                    <input type="text" placeholder="请输入城市" required>
+                </label>
+                <label>
+                    擅长领域
+                    <select>
+                        <option value="陪诊">陪诊</option>
+                        <option value="康复护理">康复护理</option>
+                        <option value="心理陪伴">心理陪伴</option>
+                        <option value="助餐助浴">助餐助浴</option>
+                    </select>
+                </label>
+                <label class="full">
+                    个人简介
+                    <textarea rows="4" placeholder="请简单介绍您的经验或动机"></textarea>
+                </label>
+                <button class="btn primary" type="submit">提交注册</button>
+            </form>
+        </section>
+        <section data-form="login-admin">
+            <h2>管理员登录</h2>
+            <p>登录后可查看平台数据、审核订单、管理用户与机构。</p>
+            <form class="form-grid">
+                <label>
+                    工号
+                    <input type="text" placeholder="请输入管理员工号" required>
+                </label>
+                <label>
+                    密码
+                    <input type="password" placeholder="请输入密码" required>
+                </label>
+                <button class="btn primary" type="submit">登录</button>
+                <a href="#" class="link">遇到问题？联系技术支持</a>
+            </form>
+        </section>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>
